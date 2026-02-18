@@ -1,0 +1,9 @@
+include_high_risk: 0.3
+max_miss_distance: 10.0
+max_warning_time: 86400
+min_miss_distance: 0.05
+min_warning_time: 3600
+n_episodes: 500
+propagation_duration: 7200
+random_seed: 42
+time_step: 60

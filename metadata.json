@@ -1,0 +1,77 @@
+{
+  "dataset_name": "Orbital Maneuver Decision Benchmark",
+  "version": "1.0",
+  "generation_date": "2026-01-31T23:03:24.940519",
+  "statistics": {
+    "total_episodes": 500,
+    "high_risk_episodes": 140,
+    "maneuvers_executed": 169,
+    "no_solution_episodes": 0,
+    "maneuver_types": {
+      "No-Maneuver": 331,
+      "Tangential": 169
+    }
+  },
+  "features": {
+    "state_features": [
+      "primary_a",
+      "primary_e",
+      "primary_i",
+      "primary_raan",
+      "primary_argp",
+      "primary_mass",
+      "primary_area"
+    ],
+    "conjunction_features": [
+      "miss_distance",
+      "relative_velocity",
+      "r_rel_R",
+      "r_rel_T",
+      "r_rel_N",
+      "v_rel_R",
+      "v_rel_T",
+      "v_rel_N"
+    ],
+    "uncertainty_features": [
+      "pos_uncertainty",
+      "vel_uncertainty",
+      "combined_covariance_trace"
+    ],
+    "risk_features": [
+      "probability_of_collision",
+      "time_to_tca"
+    ],
+    "environment_features": [
+      "f107",
+      "ap",
+      "atmospheric_density",
+      "local_object_density"
+    ],
+    "target_features": [
+      "optimal_dv_R",
+      "optimal_dv_T",
+      "optimal_dv_N",
+      "optimal_dv_magnitude",
+      "optimal_maneuver_type"
+    ],
+    "label_features": [
+      "maneuver_required",
+      "maneuver_feasible"
+    ]
+  },
+  "units": {
+    "distance": "km",
+    "velocity": "km/s (state) or m/s (delta-v)",
+    "mass": "kg",
+    "area": "m^2",
+    "angles": "degrees",
+    "time": "seconds",
+    "density": "kg/m^3",
+    "probability": "dimensionless"
+  },
+  "baseline_strategies": [
+    "fixed_miss_distance",
+    "pc_threshold",
+    "fuel_minimizing"
+  ]
+}
