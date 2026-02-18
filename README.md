@@ -137,4 +137,11 @@ Random seed control ensures reproducibility.
 ## Contact
 
 Ahmed Farahat  
-Research in Orbital Dynamics and Autonomous Space Systems
+Researcher in Orbital Dynamics and Autonomous Space Systems  
+
+For academic collaboration, research inquiries, or technical discussions:
+
+LinkedIn: https://www.linkedin.com/in/ahmed-s-farahat-437b14222  
+Institutional Email: ahmed.samy@nsst.bsu.edu.eg  
+Professional Email: ahmedfarahatofficial@gmail.com
+
